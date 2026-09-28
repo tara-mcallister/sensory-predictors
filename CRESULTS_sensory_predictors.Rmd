@@ -240,7 +240,7 @@ mydata_stereo_cc <- mydata %>%
 table(mydata_stereo_cc$Randomization_Group)
 ```
 
-In the model examining auditory predictors (n = `r length(modA$residuals)`), there was a positive direction of association between discrimination score and change in accuracy in the ultrasound biofeedback treatment condition, although it fell just short of the conventional threshold for statistical significance (`r coef_str(modA, "normed_discrim")`). There was no significant association between discrimination score and change in accuracy for the other two treatment conditions. There was a significant interaction between discrimination score and treatment group (visual-acoustic versus ultrasound: `r coef_str(modA, "Randomization_GroupVisual Acoustic:normed_discrim")`). Visual inspection of Figure 2 shows that the slope of the association for visual-acoustic biofeedback was negative, such that children with lower discrimination scores tended to exhibit a larger degree of change over the course of treatment than children with higher discrimination scores. By contrast, MBT and ultrasound biofeedback showed a positive relationship between discrimination score and change over the course of treatment. There were no significant effects or interactions for the other auditory measures (identification and category goodness judgment); see Supplementary Table A for full results.
+In the model examining auditory predictors (n = `r length(modA$residuals)`), there was a positive direction of association between discrimination score and change in accuracy in the ultrasound biofeedback treatment condition, although it fell just short of the conventional threshold for statistical significance (`r coef_str(modA, "normed_discrim")`). By contrast, the slope of the association for visual-acoustic biofeedback was negative, such that children with lower discrimination scores tended to exhibit a larger degree of change over the course of treatment than children with higher discrimination scores; see Figure 2. Although this slope was not significant on its own, the interaction between discrimination score and treatment group was statistically significant for the visual-acoustic versus ultrasound comparison (visual-acoustic versus ultrasound: `r coef_str(modA, "Randomization_GroupVisual Acoustic:normed_discrim")`). MBT, like ultrasound biofeedback, showed a positive direction of association between discrimination score and change over the course of treatment, but this association did not reach or approach significance. There were no significant effects or interactions for the other auditory measures (identification and category goodness judgment); see Supplementary Table A for full results. 
 
 ```{r model-summary, cache = TRUE}
 #Generate supplementary document reporting full results of regressions
@@ -304,23 +304,23 @@ pAd <- ggplot(
     shape = Randomization_Group
   )
 ) +
-  geom_point(size = 1.5, stroke = 1) +
+  geom_point(size = 1) +
   geom_smooth(
     method = "lm",
     se = TRUE,
     alpha = 0.35,      # higher than before
-    linewidth = 1.2
+    linewidth = 1
   ) +
   scale_color_manual(values = pal) +
   scale_fill_manual(values  = pal) +
   scale_shape_manual(values = shape_pal) +
-  theme_bw(base_size = 16) +
+  theme_bw(base_size = 14) +
   ylab("Change in accuracy") +
   xlab("Discrimination score (age-normalized)") +
   labs(color = "Group", fill = "Group", shape = "Group") +
   theme(
-    legend.position = c(.25, .75),
-    legend.justification = c("right", "bottom"),
+    legend.position = c(.25, .95),
+    legend.justification = c("right", "top"),   # was "bottom"
     legend.background = element_rect(fill = "transparent", color = NA)
   )
 
@@ -344,19 +344,19 @@ pSs <- ggplot(
     shape = Randomization_Group
   )
 ) +
-  geom_point(size = 1.5, stroke = 1) +
+  geom_point(size = 1) +
   geom_smooth(
     method = "lm",
     se = TRUE,
     alpha = 0.35,
-    linewidth = 1.2
+    linewidth = 1
   ) +
   scale_color_manual(values = pal) +
   scale_fill_manual(values  = pal) +
   scale_shape_manual(values = shape_pal) +
   ylab("Change in accuracy") +
   xlab("Stereognosis score (age-normalized)") +
-  theme_bw(base_size = 16) +
+  theme_bw(base_size = 14) +
   labs(color = "Group", fill = "Group", shape = "Group") +
   theme(
     legend.position = c(0.97, 0.03),  # bottom right
@@ -365,4 +365,12 @@ pSs <- ggplot(
   )
 
 pSs
+```
+
+```{r save-plots}
+# ---- Export Figures 2 and 3 at 300 DPI, landscape, for JSLHR submission ----
+ggsave("Figure2_discrimination.tiff", pAd, device = "tiff", width = 8, height = 5,
+       units = "in", dpi = 300, compression = "lzw")
+ggsave("Figure3_stereognosis.tiff", pSs, device = "tiff", width = 8, height = 5,
+       units = "in", dpi = 300, compression = "lzw")
 ```
