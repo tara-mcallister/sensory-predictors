@@ -1,0 +1,368 @@
+---
+title: "CRESULTS_sensory_predictors"
+author: "Tara McAllister"
+date: "2024-06-26"
+output:
+  html_document: default
+  word_document: default
+---
+
+```{r chunk-setup, include=FALSE}
+knitr::opts_chunk$set(include=TRUE, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE)
+options(scipen = 999)
+options(digits = 3)
+```
+
+```{r clear-environment}
+########################################
+#RUN THIS WITH CAUTION
+########################################
+rm(list=ls())
+```
+
+```{r package-load, echo=FALSE, include=FALSE, message=FALSE, warning=FALSE}
+########################################
+#LOAD PACKAGES
+########################################
+library("tidyverse")
+library("ggpubr")
+library("broom")
+library("GGally")
+library("flextable")
+
+theme_set(theme_bw(base_size = 16))
+
+#Create snapshot of package environment
+# renv::init()
+# renv::activate()
+# renv::snapshot()
+```
+
+
+```{r define-helper-function-for-results-reporting}
+#Formats a model coefficient as "beta = X.XX, SE = X.XX, p = X.XXX" for inline
+#reporting in the text below. beta/SE are rounded to 2 digits and p to 3
+#digits, matching the precision used throughout the manuscript.
+coef_str <- function(mod, term, digits = 2) {
+  x <- broom::tidy(mod)
+  r <- x[x$term == term, ]
+  if (nrow(r) != 1) {
+    stop("coef_str: term '", term, "' matched ", nrow(r), " rows (expected 1). Check spelling/factor levels.")
+  }
+  p_txt <- ifelse(r$p.value < .001, "< .001",
+                  paste0("= ", format(round(r$p.value, 3), nsmall = 2)))
+  paste0(
+    "β = ", round(r$estimate, digits),
+    ", SE = ", round(r$std.error, digits),
+    ", *p* ", p_txt
+  )
+}
+```
+
+```{r read-in-and-wrangle-data}
+#Read in sensory data, cleaned for outliers
+#Generated in CRESULTS_MOSAIC_sensory_wrangling.Rmd
+#Variables starting with "new" have been standardized relative to the reference sample of typically developing children (age-binned z-scores)
+#However, still need to reverse-code scores where a larger value represents worse performance, which is done here
+sensorydata <- read.csv("RSSD_normed_sensory.csv") %>%
+  dplyr::select(Subject = Study_ID, Age, Sex, normed_ident = newident,
+                normed_discrim = newdiscrim,
+                normed_catgood = newcatgood, normed_stereo = newstereo,
+                normed_PAT = newPAT)
+
+#Identification, discrimination, and stereognosis are reverse-coded here so
+#that higher values uniformly reflect better performance across all five
+#measures (category goodness and articulatory awareness already run in that
+#direction and are left as-is)
+sensorydata$normed_ident <- -1*sensorydata$normed_ident
+sensorydata$normed_discrim <- -1*sensorydata$normed_discrim
+sensorydata$normed_stereo <- -1*sensorydata$normed_stereo
+
+#Read in summary outcome data (word probes)
+#Generated in RCT_secondary_outcome_dosage.Rmd
+outcomesdata <- read.csv("RCT_subjlevel_data.csv")
+
+#Look at change over time
+wide_data <- pivot_wider(outcomesdata,
+                         id_cols = c(Subject, Condition,
+                                     Randomization_Group,
+                                     Baseline_Accuracy_Group),
+                         names_from = Session,
+                         values_from = mean_correct) %>%
+  dplyr::arrange(Condition)
+wide_data$change <- wide_data$POST_1 - wide_data$EVAL_1
+
+#The sensory dataframe includes participants who did not complete the study;
+#they are dropped in this merge
+mydata <- left_join(wide_data, sensorydata, by = "Subject")
+
+#Sanity check: accuracy by session and treatment condition
+p1 <- ggplot(outcomesdata, aes(x = Session, y = mean_correct, fill = Condition))+
+  geom_boxplot(notch=TRUE)
+p1
+
+#Age, gender breakdown
+#na.rm=TRUE guards against a silent NA result if a future data update
+#introduces missing Age values (none are present in the current dataset)
+mean(mydata$Age, na.rm = TRUE)
+sd(mydata$Age, na.rm = TRUE)
+table(mydata$Sex)
+table(mydata$Randomization_Group)
+
+#Option to subset to biofeedback condition only
+#mydata <- mydata[mydata$Randomization_Group!="Traditional",] %>% droplevels()
+
+#Fix data types
+mydata <- mydata %>%
+  dplyr::mutate(across(where(is.character), as.factor))
+```
+
+```{r select-predictors-of-interest}
+#Select only numeric columns, excluding the Subject ID itself so it doesn't
+#show up as a spurious "predictor" in the correlation output below
+df_numeric <- mydata %>% select(where(is.numeric)) %>% select(-Subject)
+
+#Examine correlation of each numeric predictor with the outcome (change score)
+cor_change <- cor(df_numeric, use = "pairwise.complete.obs")["change", ]
+cor_change <- cor_change[names(cor_change) != "change"]
+
+# Convert to tibble
+cor_df <- tibble(predictor = names(cor_change), correlation = cor_change) %>%
+   dplyr::arrange(desc(abs(correlation)))  # Sort by absolute correlation
+
+# Count missing data
+na_normed <- mydata %>%
+   dplyr::summarise(across(starts_with("normed_"), ~ sum(is.na(.)))) %>%
+  unlist()
+
+# Plot as bar chart
+p0 <- ggplot(cor_df, aes(x = reorder(predictor, abs(correlation)), y = correlation, fill = correlation)) +
+  geom_col() +
+  coord_flip() +
+  scale_fill_gradient2(low = "blue", mid = "white", high = "red") +
+  labs(title = "Correlation of Predictors with Outcome",
+       x = "Predictor", y = "Correlation") +
+  theme_minimal()
+p0
+
+#Strongest somatosensory predictor is PAT; strongest auditory predictor is catgood
+#(Note: this simple bivariate screen is exploratory only. The interaction
+#models below retain all five sensory measures regardless of this ranking,
+#per the independence rationale checked next.)
+corA <- cor.test(mydata$change, mydata$normed_catgood)
+corS <- cor.test(mydata$change, mydata$normed_PAT)
+
+#Examine correlations between sensory values, to check whether it's
+#reasonable to model the measures within each domain separately rather than
+#pooling/averaging them
+df_sensory <- mydata %>% select(starts_with("normed"))
+cor_sensory <- round(cor(df_sensory, use = "pairwise.complete.obs"), digits = 2)
+#Strongest positive pairwise correlation in the matrix (discrimination x identification)
+cormax <- cor.test(mydata$normed_discrim, mydata$normed_ident)
+#Strongest negative pairwise correlation in the matrix (category goodness x stereognosis)
+corneg <- cor.test(mydata$normed_catgood, mydata$normed_stereo)
+#ggpairs(df_sensory)
+```
+
+```{r export-correlation-matrix}
+#Export the pairwise correlation matrix as Supplementary Table B
+measure_labels <- c(normed_ident = "Identification", normed_discrim = "Discrimination",
+                     normed_catgood = "Category Goodness", normed_stereo = "Stereognosis",
+                     normed_PAT = "Articulatory Awareness")
+vars <- names(measure_labels)
+
+cor_sensory <- cor(df_sensory[vars], use = "pairwise.complete.obs")
+p_sensory <- sapply(vars, function(a) sapply(vars, function(b)
+  if (a == b) NA else cor.test(df_sensory[[a]], df_sensory[[b]])$p.value))
+
+#Format each cell as "r.rr*" (p < .05) or "r.rr"; diagonal as an em dash
+cor_display <- ifelse(row(cor_sensory) == col(cor_sensory), "\u2014",
+                       paste0(formatC(cor_sensory, format = "f", digits = 2),
+                              ifelse(p_sensory < .05, "*", "")))
+dimnames(cor_display) <- list(measure_labels[vars], measure_labels[vars])
+
+cor_table_B <- as.data.frame(cor_display) %>% tibble::rownames_to_column("Measure")
+
+ft_corr <- flextable(cor_table_B)
+ft_corr <- add_header_row(ft_corr, values = "Pairwise correlations among sensory measures (* p < .05)", colwidths = ncol(cor_table_B))
+ft_corr <- autofit(ft_corr)
+save_as_docx(ft_corr, path = "Supplement_Table_B.docx")
+```
+
+The exclusion of corrupted data and outliers resulted in the exclusion of the identification task from n = `r na_normed["normed_ident"]` participants, the discrimination task from n = `r na_normed["normed_discrim"]` participants, the category goodness judgment task from n = `r na_normed["normed_catgood"]` participants, and the articulatory awareness task from n = `r na_normed["normed_PAT"]` participant. In addition, the stereognosis task represented a special case where data were missing from a large number of participants due to sanitary precautions during the COVID-19 pandemic; this resulted in missing data from n = `r na_normed["normed_stereo"]` participants. Given that the sources of missingness appear to be largely random with respect to our treatment groups, we anticipate that the exclusion of these data will not bias our results.
+
+
+```{r stats-without-pooling}
+#Correlations (above) indicate that the sensory measures within each domain
+#are only weakly correlated with one another, suggesting each captures a partially
+#independent facet of that domain. This is why the models below retain the
+#individual auditory and somatosensory measures rather than pooling/averaging
+#across them.
+
+#Treatment condition interaction with auditory acuity
+mydata$Randomization_Group <- relevel(mydata$Randomization_Group, ref = "Ultrasound")
+modA <- lm(change ~ Randomization_Group * (normed_catgood + normed_discrim + normed_ident), data = mydata)
+#Alternative model with control for baseline accuracy
+altmodA <- lm(POST_1 ~ Randomization_Group * (normed_catgood + normed_discrim + normed_ident) + EVAL_1, data = mydata)
+#summary(modA)
+#summary(altmodA)
+
+#Relevel to inspect traditional MBT and VAB
+#Including alternative models with control for baseline accuracy
+mydata$Randomization_Group <- relevel(mydata$Randomization_Group, ref = "Traditional")
+modArelT <- lm(change ~ Randomization_Group * (normed_catgood + normed_discrim + normed_ident), data = mydata)
+altmodArelT <- lm(POST_1 ~ Randomization_Group * (normed_catgood + normed_discrim + normed_ident) + EVAL_1, data = mydata)
+mydata$Randomization_Group <- relevel(mydata$Randomization_Group, ref = "Visual Acoustic")
+modArelV <- lm(change ~ Randomization_Group * (normed_catgood + normed_discrim + normed_ident), data = mydata)
+altmodArelV <- lm(POST_1 ~ Randomization_Group * (normed_catgood + normed_discrim + normed_ident) + EVAL_1, data = mydata)
+
+#Biofeedback interaction with somatosensory acuity
+mydata$Randomization_Group <- relevel(mydata$Randomization_Group, ref = "Ultrasound")
+modS <- lm(change ~ Randomization_Group * (normed_PAT + normed_stereo), data = mydata)
+#Alternative model with control for baseline accuracy
+altmodS <- lm(POST_1 ~ Randomization_Group * (normed_PAT + normed_stereo) + EVAL_1, data = mydata)
+#summary(modS)
+#summary(altmodS)
+
+#Relevel to inspect traditional MBT and VAB
+#Including alternative models with control for baseline accuracy
+mydata$Randomization_Group <- relevel(mydata$Randomization_Group, ref = "Traditional")
+modSrelT <- lm(change ~ Randomization_Group * (normed_PAT + normed_stereo), data = mydata)
+altmodSrelT <- lm(POST_1 ~ Randomization_Group * (normed_PAT + normed_stereo) + EVAL_1, data = mydata)
+mydata$Randomization_Group <- relevel(mydata$Randomization_Group, ref = "Visual Acoustic")
+modSrelV <- lm(change ~ Randomization_Group * (normed_PAT + normed_stereo), data = mydata)
+altmodSrelV <- lm(POST_1 ~ Randomization_Group * (normed_PAT + normed_stereo) + EVAL_1, data = mydata)
+
+#Per-arm n's for the somatosensory complete-case subsample — related to 
+#balance-across-arms caveat noted in the Discussion/abstract
+mydata_stereo_cc <- mydata %>%
+  filter(!is.na(normed_stereo))
+table(mydata_stereo_cc$Randomization_Group)
+```
+
+In the model examining auditory predictors (n = `r length(modA$residuals)`), there was a positive direction of association between discrimination score and change in accuracy in the ultrasound biofeedback treatment condition, although it fell just short of the conventional threshold for statistical significance (`r coef_str(modA, "normed_discrim")`). There was no significant association between discrimination score and change in accuracy for the other two treatment conditions. There was a significant interaction between discrimination score and treatment group (visual-acoustic versus ultrasound: `r coef_str(modA, "Randomization_GroupVisual Acoustic:normed_discrim")`). Visual inspection of Figure 2 shows that the slope of the association for visual-acoustic biofeedback was negative, such that children with lower discrimination scores tended to exhibit a larger degree of change over the course of treatment than children with higher discrimination scores. By contrast, MBT and ultrasound biofeedback showed a positive relationship between discrimination score and change over the course of treatment. There were no significant effects or interactions for the other auditory measures (identification and category goodness judgment); see Supplementary Table A for full results.
+
+```{r model-summary, cache = TRUE}
+#Generate supplementary document reporting full results of regressions
+
+models <- list(
+  "Auditory, ref = Ultrasound" = modA,
+  "Auditory, ref = MBT" = modArelT,
+  "Auditory, ref = Visual-Acoustic" = modArelV,
+  "Somatosensory, ref = Ultrasound" = modS,
+  "Somatosensory, ref = MBT" = modSrelT,
+  "Somatosensory, ref = Visual-Acoustic" = modSrelV,
+  "Auditory controlling for baseline, ref = Ultrasound" = altmodA,
+  "Auditory controlling for baseline, ref = MBT" = altmodArelT,
+  "Auditory controlling for baseline, ref = Visual-Acoustic" = altmodArelV,
+  "Somatosensory controlling for baseline, ref = Ultrasound" = altmodS,
+  "Somatosensory controlling for baseline, ref = MBT" = altmodSrelT,
+  "Somatosensory controlling for baseline, ref = Visual-Acoustic" = altmodSrelV
+)
+
+
+tables <- lapply(names(models), function(nm) {
+  df <- broom::tidy(models[[nm]]) |>
+    mutate(
+      estimate  = formatC(estimate, format = "f", digits = 2),
+      std.error = formatC(std.error, format = "f", digits = 2),
+      statistic = formatC(statistic, format = "f", digits = 2),
+      p.value   = formatC(p.value, format = "f", digits = 3)
+    )
+  ft <- flextable(df)
+  ft <- add_header_row(ft, values = nm, colwidths = ncol(df))
+  ft <- autofit(ft)
+  ft
+})
+names(tables) <- names(models)
+
+do.call(save_as_docx, c(tables, path = "Supplement_Model_Results.docx"))
+```
+
+
+```{r inspect-interaction-auditory}
+#With discrim
+
+mydata$Randomization_Group <- factor(
+  mydata$Randomization_Group,
+  levels = c("Traditional", "Visual Acoustic", "Ultrasound"),
+  labels = c("MBT", "Visual Acoustic", "Ultrasound")
+)
+
+
+#Define palettes
+pal <- c("#54278F", "#2B8CBE", "#9E9AC8")
+shape_pal <- c(21, 22, 24)
+
+pAd <- ggplot(
+  mydata,
+  aes(
+    x = normed_discrim,
+    y = change,
+    color = Randomization_Group,
+    fill  = Randomization_Group,
+    shape = Randomization_Group
+  )
+) +
+  geom_point(size = 1.5, stroke = 1) +
+  geom_smooth(
+    method = "lm",
+    se = TRUE,
+    alpha = 0.35,      # higher than before
+    linewidth = 1.2
+  ) +
+  scale_color_manual(values = pal) +
+  scale_fill_manual(values  = pal) +
+  scale_shape_manual(values = shape_pal) +
+  theme_bw(base_size = 16) +
+  ylab("Change in accuracy") +
+  xlab("Discrimination score (age-normalized)") +
+  labs(color = "Group", fill = "Group", shape = "Group") +
+  theme(
+    legend.position = c(.25, .75),
+    legend.justification = c("right", "bottom"),
+    legend.background = element_rect(fill = "transparent", color = NA)
+  )
+
+pAd
+```
+
+
+In the model examining somatosensory predictors (n = `r length(modS$residuals)`), there was a positive association between stereognosis score and change in accuracy in the visual-acoustic biofeedback treatment condition (`r coef_str(modSrelV, "normed_stereo")`), but not in the other conditions. There were significant interactions between age-normalized stereognosis score and treatment group (visual-acoustic versus MBT: `r coef_str(modSrelT, "Randomization_GroupVisual Acoustic:normed_stereo")`; visual-acoustic versus ultrasound: `r coef_str(modS, "Randomization_GroupVisual Acoustic:normed_stereo")`). Visual inspection of Figure 3 reveals that MBT and ultrasound biofeedback showed a slightly negative relationship between stereognosis score and change over the course of treatment, such that children with lower stereognosis scores tended to exhibit a larger treatment response than children with higher scores. This contrasted with the positive direction of association between stereognosis score and response to treatment in the visual-acoustic biofeedback condition.
+
+
+```{r inspect-interaction-somatosensory}
+#With stereognosis
+
+pSs <- ggplot(
+  mydata,
+  aes(
+    x = normed_stereo,
+    y = change,
+    color = Randomization_Group,
+    fill  = Randomization_Group,
+    shape = Randomization_Group
+  )
+) +
+  geom_point(size = 1.5, stroke = 1) +
+  geom_smooth(
+    method = "lm",
+    se = TRUE,
+    alpha = 0.35,
+    linewidth = 1.2
+  ) +
+  scale_color_manual(values = pal) +
+  scale_fill_manual(values  = pal) +
+  scale_shape_manual(values = shape_pal) +
+  ylab("Change in accuracy") +
+  xlab("Stereognosis score (age-normalized)") +
+  theme_bw(base_size = 16) +
+  labs(color = "Group", fill = "Group", shape = "Group") +
+  theme(
+    legend.position = c(0.97, 0.03),  # bottom right
+    legend.justification = c("right", "bottom"),
+    legend.background = element_rect(fill = "transparent", color = NA)
+  )
+
+pSs
+```

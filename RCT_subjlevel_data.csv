@@ -1,0 +1,401 @@
+"","Subject","Session","Condition","Site","Randomization_Group","Baseline_Accuracy_Group","median_correct","mad_correct","mean_correct","SD_correct","dosage","dosagecorrect"
+"1","1100","EVAL_1","MBT","New York University","Traditional","Low Responder (0-5%)",0,0,9.53333333333333,16.6478957031484,4600,2341
+"2","1100","GEN_1","MBT","New York University","Traditional","Low Responder (0-5%)",0,0,16.2222222222222,25.3183310792188,4600,2341
+"3","1100","GEN_9","MBT","New York University","Traditional","Low Responder (0-5%)",0,0,20.4081632653061,28.8092687323819,4600,2341
+"4","1100","POST_1","MBT","New York University","Traditional","Low Responder (0-5%)",15.5555555555556,23.0626666666667,37.7333333333333,42.9041247478954,4600,2341
+"5","1101","EVAL_1","Biofeedback","New York University","Ultrasound","Low Responder (0-5%)",0,0,4.44444444444444,9.52380952380951,4218,628
+"6","1101","GEN_1","Biofeedback","New York University","Ultrasound","Low Responder (0-5%)",0,0,6.64444444444444,14.7140203054778,4218,628
+"7","1101","GEN_9","Biofeedback","New York University","Ultrasound","Low Responder (0-5%)",0,0,2.88888888888889,8.03431792688492,4218,628
+"8","1101","POST_1","Biofeedback","New York University","Ultrasound","Low Responder (0-5%)",0,0,0.888888888888888,3.0449723957541,4218,628
+"9","1102","EVAL_1","Biofeedback","New York University","Ultrasound","Low Responder (0-5%)",0,0,3.04444444444444,8.59142288803889,4153,1216
+"10","1102","GEN_1","Biofeedback","New York University","Ultrasound","Low Responder (0-5%)",0,0,1.11111111111111,3.36717514850737,4153,1216
+"11","1102","GEN_9","Biofeedback","New York University","Ultrasound","Low Responder (0-5%)",0,0,2.42222222222222,5.12720526330313,4153,1216
+"12","1102","POST_1","Biofeedback","New York University","Ultrasound","Low Responder (0-5%)",11.1111111111111,16.4733333333333,17.1555555555555,20.027896895806,4153,1216
+"13","1103","EVAL_1","MBT","New York University","Traditional","High Responder (6%-100%)",0,0,11.9777777777778,17.511166937075,4600,1642
+"14","1103","GEN_1","MBT","New York University","Traditional","High Responder (6%-100%)",0,0,7.99999999999999,16.1935882474373,4600,1642
+"15","1103","GEN_9","MBT","New York University","Traditional","High Responder (6%-100%)",0,0,23.5555555555556,31.3980932865475,4600,1642
+"16","1103","POST_1","MBT","New York University","Traditional","High Responder (6%-100%)",16.6666666666667,24.71,31.9111111111111,34.1760739588696,4600,1642
+"17","1104","EVAL_1","MBT","New York University","Traditional","High Responder (6%-100%)",0,0,26.3555555555556,36.3966834877719,4600,2489
+"18","1104","GEN_1","MBT","New York University","Traditional","High Responder (6%-100%)",0,0,19.3415637860082,26.0747323580893,4600,2489
+"19","1104","GEN_9","MBT","New York University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,29.3333333333333,33.1255808526872,4600,2489
+"20","1104","POST_1","MBT","New York University","Traditional","High Responder (6%-100%)",22.2222222222222,32.9466666666666,37.1111111111111,36.0991607646399,4600,2489
+"21","1107","EVAL_1","Biofeedback","New York University","Ultrasound","High Responder (6%-100%)",0,0,7.34545454545454,10.8137923516537,4551,2634
+"22","1107","GEN_1","Biofeedback","New York University","Ultrasound","High Responder (6%-100%)",33.3333333333333,32.9466666666668,30.7328605200946,25.9249469980474,4551,2634
+"23","1107","GEN_9","Biofeedback","New York University","Ultrasound","High Responder (6%-100%)",55.5555555555556,32.9466666666666,56.2358276643991,23.5055552563209,4551,2634
+"24","1107","POST_1","Biofeedback","New York University","Ultrasound","High Responder (6%-100%)",68.3333333333333,18.9443333333333,70.7479797979798,17.1529857471368,4551,2634
+"25","1109","EVAL_1","MBT","New York University","Traditional","Low Responder (0-5%)",0,0,3.77777777777777,7.6487516210519,4570,2594
+"26","1109","GEN_1","MBT","New York University","Traditional","Low Responder (0-5%)",0,0,2.22222222222222,5.01948834947361,4570,2594
+"27","1109","GEN_9","MBT","New York University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,14.4444444444444,10.5886222731161,4570,2594
+"28","1109","POST_1","MBT","New York University","Traditional","Low Responder (0-5%)",33.3333333333333,16.4733333333333,37.0068027210884,20.1986076018912,4570,2594
+"29","1110","EVAL_1","MBT","New York University","Traditional","Low Responder (0-5%)",10,14.826,9.38585858585858,12.2336201966551,4315,2475
+"30","1110","GEN_1","MBT","New York University","Traditional","Low Responder (0-5%)",0,0,5.55555555555555,10.503479854148,4315,2475
+"31","1110","GEN_9","MBT","New York University","Traditional","Low Responder (0-5%)",22.2222222222222,32.9466666666666,25.679012345679,23.0675364054105,4315,2475
+"32","1110","POST_1","MBT","New York University","Traditional","Low Responder (0-5%)",66.6666666666667,32.9466666666666,59.0682333539476,27.5955398365955,4315,2475
+"33","1111","EVAL_1","Biofeedback","New York University","Visual Acoustic","High Responder (6%-100%)",0,0,6.96145124716553,11.4750030487728,4600,2566
+"34","1111","GEN_1","Biofeedback","New York University","Visual Acoustic","High Responder (6%-100%)",0,0,3.91111111111111,7.14899207437777,4600,2566
+"35","1111","GEN_9","Biofeedback","New York University","Visual Acoustic","High Responder (6%-100%)",10,14.826,8.73333333333333,10.1661926955425,4600,2566
+"36","1111","POST_1","Biofeedback","New York University","Visual Acoustic","High Responder (6%-100%)",0,0,7.5111111111111,9.83502105762003,4600,2566
+"37","1115","EVAL_1","Biofeedback","New York University","Visual Acoustic","Low Responder (0-5%)",16.6666666666667,16.4733333333333,17.3333333333333,16.0560871319388,3996,1889
+"38","1115","GEN_1","Biofeedback","New York University","Visual Acoustic","Low Responder (0-5%)",22.2222222222222,16.4733333333333,22,19.7604704011871,3996,1889
+"39","1115","GEN_9","Biofeedback","New York University","Visual Acoustic","Low Responder (0-5%)",77.7777777777778,32.9466666666666,65.7407407407407,31.4130345703158,3996,1889
+"40","1115","POST_1","Biofeedback","New York University","Visual Acoustic","Low Responder (0-5%)",77.7777777777778,16.4733333333333,76.8888888888889,17.2191131712008,3996,1889
+"41","3105","EVAL_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,1.13378684807256,3.39820967689553,4600,2301
+"42","3105","GEN_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,4.64444444444444,8.70469591166675,4600,2301
+"43","3105","GEN_9","MBT","Montclair State University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,15.5555555555556,19.4403947839935,4600,2301
+"44","3105","POST_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,11.1111111111111,14.7716857136501,4600,2301
+"45","3106","EVAL_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",0,0,1.48148148148148,4.49466574975494,4428,407
+"46","3106","GEN_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",0,0,2.72108843537415,5.33382146922115,4428,407
+"47","3106","GEN_9","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",0,0,2.22222222222222,5.49857399228214,4428,407
+"48","3106","POST_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",0,0,3.20987654320987,7.34824861449729,4428,407
+"49","3107","EVAL_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,3.24444444444444,7.5853753283046,4569,2521
+"50","3107","GEN_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,21.9954648526077,26.690748763175,4569,2521
+"51","3107","GEN_9","MBT","Montclair State University","Traditional","Low Responder (0-5%)",66.6666666666667,32.9466666666668,60,30.8320820566925,4569,2521
+"52","3107","POST_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",100,0,89.5555555555556,13.8777733297742,4569,2521
+"53","3108","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",0,0,9.81912144702841,13.104137308975,4530,1957
+"54","3108","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",0,0,2.44444444444444,5.62988820665657,4530,1957
+"55","3108","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",11.1111111111111,16.4733333333333,24.2222222222222,29.9230557733972,4530,1957
+"56","3108","POST_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",44.4444444444444,16.4733333333335,44.2080378250591,20.7856119078544,4530,1957
+"57","3109","EVAL_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",5.55555555555555,8.23666666666666,7.55555555555555,8.53017704288533,4600,781
+"58","3109","GEN_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",0,0,2,4.86139454955985,4600,781
+"59","3109","GEN_9","MBT","Montclair State University","Traditional","High Responder (6%-100%)",0,0,3.33333333333333,5.61195858084561,4600,781
+"60","3109","POST_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,9.69267139479904,11.726215927186,4600,781
+"61","3110","EVAL_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,9.21985815602836,9.9162215048245,4208,2578
+"62","3110","GEN_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",5.55555555555555,8.23666666666666,11.5555555555556,16.9417956369858,4208,2578
+"63","3110","GEN_9","MBT","Montclair State University","Traditional","High Responder (6%-100%)",27.7777777777778,41.1833333333333,33.1111111111111,30.1578947252709,4208,2578
+"64","3110","POST_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",72.2222222222223,24.71,64.5833333333333,26.6958321595101,4208,2578
+"65","3111","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",0,0,12.9251700680272,18.4740584962423,4569,2216
+"66","3111","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",44.4444444444444,65.8933333333333,46.2222222222222,37.4522455656372,4569,2216
+"67","3111","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",66.6666666666667,32.9466666666666,54.4444444444444,28.9924882322595,4569,2216
+"68","3111","POST_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",88.8888888888889,16.4733333333333,85.2657004830918,16.4060860309124,4569,2216
+"69","3115","EVAL_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,6.14696969696969,8.11100972364549,4600,1228
+"70","3115","GEN_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,17.8240740740741,20.7223864808622,4600,1228
+"71","3115","GEN_9","MBT","Montclair State University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,13.1944444444444,13.2970842950107,4600,1228
+"72","3115","POST_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",33.3333333333333,22.239,33.019696969697,22.3925023031013,4600,1228
+"73","3116","EVAL_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",0,0,11.0439393939394,18.3107527319027,4570,3347
+"74","3116","GEN_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",33.3333333333333,32.9466666666668,40.1360544217687,30.4135019942218,4570,3347
+"75","3116","GEN_9","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",55.5555555555556,16.4733333333335,54.421768707483,23.8139325724187,4570,3347
+"76","3116","POST_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",70,44.478,66.0242424242424,30.0282446840255,4570,3347
+"77","3117","EVAL_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,6.76328502415458,11.1057421274146,4570,127
+"78","3117","GEN_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,0.444444444444444,2.19942959691286,4570,127
+"79","3117","GEN_9","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,0.222222222222222,1.57134840263677,4570,127
+"80","3117","POST_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,6.71296296296296,11.4003910857238,4570,127
+"81","3118","EVAL_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,17.1388888888889,17.467553515016,4600,2775
+"82","3118","GEN_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,12.6666666666667,15.7150873613065,4600,2775
+"83","3118","GEN_9","MBT","Montclair State University","Traditional","High Responder (6%-100%)",55.5555555555556,32.9466666666668,48.0725623582766,31.5403389157435,4600,2775
+"84","3118","POST_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",36.6666666666667,37.8886666666667,42.1353535353535,31.1977263049221,4600,2775
+"85","3122","EVAL_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",4.54545454545454,6.73909090909091,9.15959595959595,12.9217123726558,4400,143
+"86","3122","GEN_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,7.72946859903381,10.1752989642442,4400,143
+"87","3122","GEN_9","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,10.4308390022676,16.1028336439505,4400,143
+"88","3122","POST_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,15.409595959596,18.0923145225425,4400,143
+"89","3128","EVAL_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,7.48888888888888,10.4781383470517,4480,2519
+"90","3128","GEN_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",22.2222222222222,32.9466666666666,34.7777777777778,29.3717281190333,4480,2519
+"91","3128","GEN_9","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",44.4444444444444,32.9466666666668,42.8444444444444,26.6932596049945,4480,2519
+"92","3128","POST_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",55.5555555555556,32.9466666666668,59.4666666666667,26.9684735176093,4480,2519
+"93","3129","EVAL_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",47.2222222222222,16.4733333333334,48.4444444444444,18.8494987445993,4500,2556
+"94","3129","GEN_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",55.5555555555556,16.4733333333335,48.8888888888889,19.4403947839935,4500,2556
+"95","3129","GEN_9","MBT","Montclair State University","Traditional","High Responder (6%-100%)",66.6666666666667,16.4733333333333,69.1609977324263,18.73923643352,4500,2556
+"96","3129","POST_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",77.7777777777778,16.4733333333333,71.2888888888889,19.1272936812203,4500,2556
+"97","3130","EVAL_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,2.66666666666666,6.56767011605625,4600,157
+"98","3130","GEN_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,1.55555555555555,3.89455369726517,4600,157
+"99","3130","GEN_9","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,2.88888888888889,6.27335645884746,4600,157
+"100","3130","POST_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,2,5.35464374394698,4600,157
+"101","3131","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,1.11111111111111,3.36717514850737,4567,2646
+"102","3131","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",33.3333333333333,32.9466666666668,39.5555555555556,31.9169999430014,4567,2646
+"103","3131","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",77.7777777777778,16.4733333333333,72,22.4747555814957,4567,2646
+"104","3131","POST_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",88.8888888888889,16.4733333333333,86.8707482993197,15.498694803317,4567,2646
+"105","3135","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,4.66666666666666,10.0615390423749,4570,663
+"106","3135","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,1.77777777777778,4.68724541594711,4570,663
+"107","3135","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,5.33333333333333,14.2397850742894,4570,663
+"108","3135","POST_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,14.5124716553288,28.6173205804633,4570,663
+"109","3136","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",11.1111111111111,16.4733333333333,14.4444444444444,17.2790008389502,4600,3143
+"110","3136","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",22.2222222222222,32.9466666666666,34.8888888888889,33.9764120154585,4600,3143
+"111","3136","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",55.5555555555556,34.594,53.3333333333333,30.782193908641,4600,3143
+"112","3136","POST_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",50,24.71,57.5,29.0706231357068,4600,3143
+"113","3137","EVAL_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",10.5555555555556,15.6496666666667,9.75555555555555,12.011773010431,4600,2922
+"114","3137","GEN_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",0,0,4.66666666666666,9.80793124176216,4600,2922
+"115","3137","GEN_9","MBT","Montclair State University","Traditional","High Responder (6%-100%)",33.3333333333333,32.9466666666668,40.8888888888889,31.4622234458599,4600,2922
+"116","3137","POST_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",66.6666666666667,16.4733333333333,67.3333333333333,22.7167203336232,4600,2922
+"117","3138","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,3.51111111111111,8.19072228004855,4550,0
+"118","3138","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,2.52525252525252,6.7197013504811,4550,0
+"119","3138","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,1.33333333333333,4.8354114957866,4550,0
+"120","3138","POST_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,0.866666666666666,2.97202883639846,4550,0
+"121","3139","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,2.86666666666666,6.63670515988081,4600,1775
+"122","3139","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,1.69082125603865,4.66572083557179,4600,1775
+"123","3139","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,2.88888888888889,6.6628863053382,4600,1775
+"124","3139","POST_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",22.2222222222222,16.4733333333333,21.7108585858586,17.0711255300924,4600,1775
+"125","3140","EVAL_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",44.4444444444444,16.4733333333335,44.8888888888889,20.927113191157,4600,3530
+"126","3140","GEN_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",66.6666666666667,16.4733333333333,63.0666666666667,19.4644341692962,4600,3530
+"127","3140","GEN_9","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",88.8888888888889,16.4733333333333,84.2222222222222,17.2556547707453,4600,3530
+"128","3140","POST_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",77.7777777777778,16.4733333333333,79.4888888888889,12.7503106142908,4600,3530
+"129","3141","EVAL_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",10,14.826,9.7111111111111,12.0086682390171,4600,1930
+"130","3141","GEN_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,8.95555555555555,15.6868607889193,4600,1930
+"131","3141","GEN_9","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",11.1111111111111,16.4733333333333,20.6444444444444,20.7081606221249,4600,1930
+"132","3141","POST_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",88.8888888888889,16.4733333333333,85.4648526077098,15.1107651354284,4600,1930
+"133","3142","EVAL_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",0,0,5.53333333333333,9.31109000479263,4600,2130
+"134","3142","GEN_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",0,0,4.4,6.99119411563642,4600,2130
+"135","3142","GEN_9","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",27.7777777777778,24.71,37.4444444444444,30.22069657347,4600,2130
+"136","3142","POST_1","Biofeedback","Montclair State University","Ultrasound","High Responder (6%-100%)",66.6666666666667,16.4733333333333,68.6848072562358,16.3089283996416,4600,2130
+"137","3144","EVAL_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,0.444444444444444,2.19942959691286,4530,222
+"138","3144","GEN_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,1.51111111111111,5.33937677247711,4530,222
+"139","3144","GEN_9","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,0.666666666666666,2.66553263868994,4530,222
+"140","3144","POST_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,3.04444444444444,7.1931562334374,4530,222
+"141","3146","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",0,0,13.0479797979798,22.7034072972345,4600,2276
+"142","3146","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",0,0,31.0185185185185,40.8060583926091,4600,2276
+"143","3146","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",0,0,26.2411347517731,36.1473643301055,4600,2276
+"144","3146","POST_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",11.8055555555556,17.5029166666667,33.7065656565657,35.81775328468,4600,2276
+"145","3147","EVAL_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,0.444444444444444,2.19942959691286,4452,240
+"146","3147","GEN_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,1.63120567375886,3.94440065179328,4452,240
+"147","3147","GEN_9","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,1.33333333333333,4.28277382959747,4452,240
+"148","3147","POST_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,2,4.31208816101781,4452,240
+"149","3150","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",11.1111111111111,16.4733333333333,12.9959595959596,17.1514013961024,4600,3218
+"150","3150","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",55.5555555555556,32.9466666666666,55.3191489361702,30.6039898694922,4600,3218
+"151","3150","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",66.6666666666667,16.4733333333333,63.3569739952719,18.2301876099874,4600,3218
+"152","3150","POST_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",63.6363636363636,20.9660606060607,62.4631313131313,20.4525368671585,4600,3218
+"153","3151","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",0,0,1.97777777777778,4.26680130173066,4540,671
+"154","3151","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",0,0,6.22222222222222,8.14333672278136,4540,671
+"155","3151","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",0,0,6.66666666666666,9.52380952380951,4540,671
+"156","3151","POST_1","Biofeedback","Montclair State University","Visual Acoustic","High Responder (6%-100%)",0,0,5.46666666666666,9.44101578420144,4540,671
+"157","3152","EVAL_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,11.7006802721088,12.4765253667508,4560,2996
+"158","3152","GEN_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",77.7777777777778,16.4733333333333,71.1111111111111,20.695880651437,4560,2996
+"159","3152","GEN_9","MBT","Montclair State University","Traditional","High Responder (6%-100%)",88.8888888888889,16.4733333333333,77.7777777777778,24.9968503936883,4560,2996
+"160","3152","POST_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",88.8888888888889,16.4733333333333,86.0222222222222,15.0318214577146,4560,2996
+"161","3154","EVAL_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",0,0,6.55555555555555,7.91823292776947,4600,2941
+"162","3154","GEN_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",0,0,4.10628019323671,7.53908722763703,4600,2941
+"163","3154","GEN_9","MBT","Montclair State University","Traditional","High Responder (6%-100%)",44.4444444444444,32.9466666666666,39.8550724637681,25.1825801437614,4600,2941
+"164","3154","POST_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",65.1515151515152,18.719696969697,61.980303030303,22.9325795688318,4600,2941
+"165","3155","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,10.2222222222222,13.9898822454163,4520,2914
+"166","3155","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,7.55555555555555,12.7854162321284,4520,2914
+"167","3155","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",55.5555555555556,49.4199999999999,51.1574074074074,37.1523520040707,4520,2914
+"168","3155","POST_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",77.7777777777778,16.4733333333333,70,21.9082122886385,4520,2914
+"169","3156","EVAL_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,15.8,17.2443935992892,4600,1975
+"170","3156","GEN_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,13.7777777777778,17.030791848891,4600,1975
+"171","3156","GEN_9","MBT","Montclair State University","Traditional","Low Responder (0-5%)",61.1111111111111,24.71,53.3333333333333,25.1976315339485,4600,1975
+"172","3156","POST_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",52.7777777777778,28.8283333333334,53.5166666666667,26.8183287626498,4600,1975
+"173","3157","EVAL_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,4.58333333333333,7.21616918853913,4600,18
+"174","3157","GEN_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,7.02947845804988,10.3174603174603,4600,18
+"175","3157","GEN_9","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,8.21256038647342,10.5889096442986,4600,18
+"176","3157","POST_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,8.65252525252525,10.5943355790327,4600,18
+"177","3158","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,4.73333333333333,7.52190050123077,4480,2640
+"178","3158","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",33.3333333333333,16.4733333333333,28.5714285714285,14.3443827637312,4480,2640
+"179","3158","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",55.5555555555556,16.4733333333335,53.5555555555556,20.9006094392176,4480,2640
+"180","3158","POST_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",77.7777777777778,16.4733333333333,78.5474747474748,17.1032976733147,4480,2640
+"181","3159","EVAL_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,16.4545454545454,20.2477965188651,4600,2299
+"182","3159","GEN_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",22.2222222222222,32.9466666666666,25.6944444444444,21.883500074686,4600,2299
+"183","3159","GEN_9","MBT","Montclair State University","Traditional","Low Responder (0-5%)",22.2222222222222,32.9466666666666,33.5748792270531,31.6435159416755,4600,2299
+"184","3159","POST_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",66.6666666666667,22.239,62.4722222222222,23.2925522306593,4600,2299
+"185","3161","EVAL_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,5.11111111111111,7.84390419086084,4600,970
+"186","3161","GEN_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,6.57596371882086,14.1491117352213,4600,970
+"187","3161","GEN_9","MBT","Montclair State University","Traditional","Low Responder (0-5%)",22.2222222222222,32.9466666666666,29.2517006802721,26.3224189710746,4600,970
+"188","3161","POST_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",33.3333333333333,32.9466666666666,42.8571428571429,28.0541803843391,4600,970
+"189","3162","EVAL_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,7.55555555555555,13.550759346294,4600,125
+"190","3162","GEN_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,9.55555555555555,13.2822149342679,4600,125
+"191","3162","GEN_9","MBT","Montclair State University","Traditional","Low Responder (0-5%)",5.55555555555555,8.23666666666666,26.6666666666667,33.96973739529,4600,125
+"192","3162","POST_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,13.3333333333333,17.3880176985767,4600,125
+"193","3163","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,8.22222222222222,10.9535311105309,4600,1606
+"194","3163","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",11.1111111111111,16.4733333333333,20.6666666666667,25.595453425943,4600,1606
+"195","3163","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",38.8888888888889,41.1833333333334,45.5555555555556,36.4906791510243,4600,1606
+"196","3163","POST_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",33.3333333333333,32.9466666666668,41.1111111111111,31.3667822942373,4600,1606
+"197","3165","EVAL_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,0.888888888888888,3.0449723957541,4600,3143
+"198","3165","GEN_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",0,0,5.11111111111111,9.31246993261753,4600,3143
+"199","3165","GEN_9","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",77.7777777777778,32.9466666666666,70.2222222222222,24.2228671199178,4600,3143
+"200","3165","POST_1","Biofeedback","Montclair State University","Visual Acoustic","Low Responder (0-5%)",88.8888888888889,16.4733333333333,82,19.0330632214268,4600,3143
+"201","3166","EVAL_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",0,0,18.8208616780045,29.5894474322337,4600,2308
+"202","3166","GEN_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,30.2222222222222,34.4879397676636,4600,2308
+"203","3166","GEN_9","MBT","Montclair State University","Traditional","Low Responder (0-5%)",44.4444444444444,49.4199999999999,52,33.3287978773856,4600,2308
+"204","3166","POST_1","MBT","Montclair State University","Traditional","Low Responder (0-5%)",55.5555555555556,32.9466666666668,61.5555555555556,29.0272285098138,4600,2308
+"205","3168","EVAL_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",0,0,9.55555555555555,13.6563296268174,4600,2588
+"206","3168","GEN_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,16.2222222222222,19.4675923117298,4600,2588
+"207","3168","GEN_9","MBT","Montclair State University","Traditional","High Responder (6%-100%)",66.6666666666667,32.9466666666666,65.3333333333333,24.9605382683851,4600,2588
+"208","3168","POST_1","MBT","Montclair State University","Traditional","High Responder (6%-100%)",55.5555555555556,32.9466666666666,58,25.5244807619232,4600,2588
+"209","3171","EVAL_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",22.2222222222222,16.4733333333333,25.1111111111111,16.6189793967763,4600,3190
+"210","3171","GEN_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",50,41.1833333333334,50.8888888888889,29.1899539903402,4600,3190
+"211","3171","GEN_9","MBT","Syracuse University","Traditional","High Responder (6%-100%)",100,0,91.3333333333333,11.939631472439,4600,3190
+"212","3171","POST_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",100,0,93.1111111111111,10.9719172436733,4600,3190
+"213","3172","EVAL_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,9.55555555555555,14.0204651917293,4480,1782
+"214","3172","GEN_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",0,0,10.6666666666667,16.1811364284123,4480,1782
+"215","3172","GEN_9","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",11.1111111111111,16.4733333333333,12.8888888888889,15.6105280674848,4480,1782
+"216","3172","POST_1","Biofeedback","Montclair State University","Ultrasound","Low Responder (0-5%)",77.7777777777778,16.4733333333333,70.6666666666667,26.0588322110872,4480,1782
+"217","6107","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,6.01851851851851,16.0375074774896,4142,340
+"218","6107","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,6.34920634920635,11.7851130197758,4142,340
+"219","6107","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,7.32860520094562,10.9349797827215,4142,340
+"220","6107","POST_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,9.68888888888888,14.9695920895254,4142,340
+"221","6109","EVAL_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",0,0,8.7962962962963,18.3304078665019,4591,2181
+"222","6109","GEN_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,9.55555555555555,9.78735873617015,4591,2181
+"223","6109","GEN_9","MBT","Syracuse University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,16.548463356974,20.0472255675214,4591,2181
+"224","6109","POST_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,19.0888888888889,22.7949882439114,4591,2181
+"225","6111","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",22.2222222222222,16.4733333333333,28.743961352657,23.9542415815596,4350,1592
+"226","6111","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",22.2222222222222,16.4733333333333,29.7777777777778,22.3848921445133,4350,1592
+"227","6111","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",22.2222222222222,16.4733333333333,30.8888888888889,26.2063443992574,4350,1592
+"228","6111","POST_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",33.3333333333333,32.9466666666666,33.5648148148148,26.3824076483663,4350,1592
+"229","6112","EVAL_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",22.2222222222222,32.9466666666666,24.9382716049383,27.129356705629,4600,2635
+"230","6112","GEN_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,24.2630385487528,27.8400662171276,4600,2635
+"231","6112","GEN_9","MBT","Syracuse University","Traditional","High Responder (6%-100%)",33.3333333333333,32.9466666666666,39.0070921985816,30.4618537290749,4600,2635
+"232","6112","POST_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",55.5555555555556,32.9466666666666,50.9259259259259,26.6147379863908,4600,2635
+"233","6113","EVAL_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,12.6666666666667,13.4705711170013,4600,2868
+"234","6113","GEN_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,15.2380952380952,15.3223256247686,4600,2868
+"235","6113","GEN_9","MBT","Syracuse University","Traditional","High Responder (6%-100%)",44.4444444444444,16.4733333333335,42.6666666666667,21.2200317042139,4600,2868
+"236","6113","POST_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",77.7777777777778,16.4733333333333,69.0307328605201,21.0991792129671,4600,2868
+"237","6114","EVAL_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,9.25925925925925,9.81395984797839,4309,616
+"238","6114","GEN_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,1.77777777777778,5.66112841273873,4309,616
+"239","6114","GEN_9","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,2.82222222222222,5.76787045225912,4309,616
+"240","6114","POST_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,11.1111111111111,12.2951852260553,4309,616
+"241","6116","EVAL_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",55.5555555555556,32.9466666666666,54.8611111111111,23.3075676722369,4600,2855
+"242","6116","GEN_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",66.6666666666667,32.9466666666666,65.5555555555556,22.8096950209523,4600,2855
+"243","6116","GEN_9","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",55.5555555555556,24.71,60.4444444444445,26.2898547463662,4600,2855
+"244","6116","POST_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",88.8888888888889,16.4733333333333,86.9976359338062,11.6578409074104,4600,2855
+"245","6119","EVAL_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",0,0,0.925925925925925,3.10344659850515,4600,2413
+"246","6119","GEN_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",0,0,0.444444444444444,2.19942959691286,4600,2413
+"247","6119","GEN_9","MBT","Syracuse University","Traditional","High Responder (6%-100%)",0,0,10,26.8671601266837,4600,2413
+"248","6119","POST_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",0,0,17.4940898345154,31.745150715349,4600,2413
+"249","6123","EVAL_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",11.1111111111111,16.4733333333333,13.3333333333333,19.0398011854299,4600,2512
+"250","6123","GEN_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",22.2222222222222,32.9466666666666,31.7777777777778,25.8890786636744,4600,2512
+"251","6123","GEN_9","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",22.2222222222222,32.9466666666666,26.7573696145125,26.7320155446021,4600,2512
+"252","6123","POST_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",44.4444444444444,32.9466666666666,43.287037037037,24.3906116166028,4600,2512
+"253","6125","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",0,0,6.12244897959183,9.36821757123056,4600,1844
+"254","6125","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",0,0,2.22222222222222,5.49857399228214,4600,1844
+"255","6125","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",0,0,7.55555555555555,13.9176572804971,4600,1844
+"256","6125","POST_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",55.5555555555556,32.9466666666666,57.1428571428571,22.9061423645426,4600,1844
+"257","6126","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",16.6666666666667,8.23666666666666,17.3913043478261,14.1813018401791,4600,2948
+"258","6126","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",11.1111111111111,16.4733333333333,14.2222222222222,18.786570953033,4600,2948
+"259","6126","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",44.4444444444444,16.4733333333335,46,18.2380883307763,4600,2948
+"260","6126","POST_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",50,24.71,52.5462962962963,20.3385560001162,4600,2948
+"261","6127","EVAL_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",44.4444444444444,32.9466666666668,41.1777777777778,27.6741013059861,4600,2505
+"262","6127","GEN_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",38.8888888888889,24.7100000000001,41.1111111111111,24.0987721439508,4600,2505
+"263","6127","GEN_9","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",44.4444444444444,16.4733333333335,39.3333333333333,20.3533908482696,4600,2505
+"264","6127","POST_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",66.6666666666667,32.9466666666666,70.4444444444445,22.9594272263894,4600,2505
+"265","6129","EVAL_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,22.8798185941043,25.2068789676848,4600,2898
+"266","6129","GEN_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,20.8888888888889,27.8244505856006,4600,2898
+"267","6129","GEN_9","MBT","Syracuse University","Traditional","High Responder (6%-100%)",44.4444444444444,49.4199999999999,50,31.6068377011744,4600,2898
+"268","6129","POST_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",66.6666666666667,32.9466666666666,63.1111111111111,28.2557516826116,4600,2898
+"269","6130","EVAL_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,6.66666666666666,8.69400884928834,4559,1887
+"270","6130","GEN_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,12.2931442080378,19.9615898681803,4559,1887
+"271","6130","GEN_9","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",33.3333333333333,24.71,29.3333333333333,20.9090460953335,4559,1887
+"272","6130","POST_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",44.4444444444444,16.4733333333333,41.5111111111111,16.0792318896378,4559,1887
+"273","6131","EVAL_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",0,0,1.8140589569161,4.14930876755505,4472,2602
+"274","6131","GEN_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",0,0,2.66666666666666,5.74945088135708,4472,2602
+"275","6131","GEN_9","MBT","Syracuse University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,20.2222222222222,25.9551719289514,4472,2602
+"276","6131","POST_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",55.5555555555556,16.4733333333335,59.7333333333333,22.5179416722074,4472,2602
+"277","6132","EVAL_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",22.2222222222222,16.4733333333333,23.4222222222222,18.50529535458,4600,2443
+"278","6132","GEN_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",66.6666666666667,32.9466666666668,66.6666666666667,29.2683951025171,4600,2443
+"279","6132","GEN_9","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",66.6666666666667,16.4733333333333,62.3333333333333,22.5957830789368,4600,2443
+"280","6132","POST_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",57.7777777777778,29.652,59.5555555555556,25.5974220798263,4600,2443
+"281","6133","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",0,0,5.93333333333333,9.12280097373881,4600,3541
+"282","6133","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",55.5555555555556,32.9466666666666,58.3924349881797,23.5665917436331,4600,3541
+"283","6133","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",61.1111111111111,41.1833333333333,63.7777777777778,26.8258664371405,4600,3541
+"284","6133","POST_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",55.5555555555556,16.4733333333335,55.4444444444444,18.4349209082634,4600,3541
+"285","6134","EVAL_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,1.33786848072562,3.62163418196539,4600,2074
+"286","6134","GEN_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,3.55555555555555,5.69662172854805,4600,2074
+"287","6134","GEN_9","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,4.76190476190476,13.981174880131,4600,2074
+"288","6134","POST_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",22.2222222222222,16.4733333333333,27.5555555555555,17.1310953183899,4600,2074
+"289","6136","EVAL_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,5.99999999999999,11.7095099311162,4600,2388
+"290","6136","GEN_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",5,7.413,11.8,16.1731778115515,4600,2388
+"291","6136","GEN_9","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,14.2,22.3435350849122,4600,2388
+"292","6136","POST_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",33.3333333333333,16.4733333333333,39.3777777777778,14.2559831714771,4600,2388
+"293","6137","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,4.86666666666666,6.77497060933621,4600,1449
+"294","6137","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,7.33333333333333,11.3600237048145,4600,1449
+"295","6137","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",27.7777777777778,24.71,30.6666666666667,23.1724286868504,4600,1449
+"296","6137","POST_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",33.3333333333333,32.9466666666666,30.0888888888889,21.2067769180325,4600,1449
+"297","6142","EVAL_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,3.17129629629629,6.70982712551418,4600,2722
+"298","6142","GEN_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,12,16.6235269353473,4600,2722
+"299","6142","GEN_9","MBT","Syracuse University","Traditional","Low Responder (0-5%)",66.6666666666667,32.9466666666666,63.1111111111111,22.3848921445133,4600,2722
+"300","6142","POST_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",55.5555555555556,32.9466666666666,55.4222222222222,21.4122689309418,4600,2722
+"301","6143","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,4.73922902494331,8.76879377976593,4600,2464
+"302","6143","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,8.88888888888888,13.4687005940295,4600,2464
+"303","6143","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,15.5555555555556,24.8958526053304,4600,2464
+"304","6143","POST_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",33.3333333333333,16.4733333333333,36.5555555555556,19.2819579593537,4600,2464
+"305","6144","EVAL_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,1.13378684807256,3.39820967689553,4490,924
+"306","6144","GEN_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,5.11111111111111,11.7095099311162,4490,924
+"307","6144","GEN_9","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,15.1111111111111,23.8370211588484,4490,924
+"308","6144","POST_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,34.4666666666667,42.9889155851799,4490,924
+"309","6145","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,1.8140589569161,4.14930876755505,4477,1082
+"310","6145","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,2.66666666666666,7.63226366995003,4477,1082
+"311","6145","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,1.55555555555555,3.89455369726517,4477,1082
+"312","6145","POST_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,2.42630385487528,5.93896194645392,4477,1082
+"313","6147","EVAL_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,1.53333333333333,3.84172895065619,4508,2033
+"314","6147","GEN_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,2,5.35464374394698,4508,2033
+"315","6147","GEN_9","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,6.66666666666667,16.1873635352152,4508,2033
+"316","6147","POST_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",44.4444444444444,32.9466666666666,38.6394557823129,23.1676939399676,4508,2033
+"317","6149","EVAL_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,24.1555555555556,34.3773100417151,4589,490
+"318","6149","GEN_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,22.4444444444444,30.9820777360319,4589,490
+"319","6149","GEN_9","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,19.3333333333333,27.9301940917084,4589,490
+"320","6149","POST_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",10.5555555555556,15.6496666666667,18.9777777777778,25.7513352531814,4589,490
+"321","6150","EVAL_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",11.1111111111111,16.4733333333333,19.8666666666667,16.8008806113611,4600,2877
+"322","6150","GEN_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",33.3333333333333,16.4733333333333,31.7777777777778,23.3295537377253,4600,2877
+"323","6150","GEN_9","MBT","Syracuse University","Traditional","High Responder (6%-100%)",66.6666666666667,16.4733333333333,67.1111111111111,18.7758388350746,4600,2877
+"324","6150","POST_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",66.6666666666667,16.4733333333333,60.8666666666667,21.7284020763176,4600,2877
+"325","6152","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,0.666666666666666,2.66553263868994,4544,2442
+"326","6152","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,6,16.3746142530905,4544,2442
+"327","6152","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",11.1111111111111,16.4733333333333,21.7777777777778,19.4352099873193,4544,2442
+"328","6152","POST_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",22.2222222222222,16.4733333333333,25.7777777777778,13.5041962254941,4544,2442
+"329","6153","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",0,0,4,7.698003589195,4291,2444
+"330","6153","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",0,0,2.44444444444444,5.62988820665657,4291,2444
+"331","6153","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",44.4444444444444,16.4733333333335,43.1111111111111,22.1813683423028,4291,2444
+"332","6153","POST_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",47.2222222222222,28.8283333333334,49.5111111111111,25.0131333605765,4291,2444
+"333","6154","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,0.430839002267573,2.11325824693561,4358,1538
+"334","6154","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,0.888888888888888,3.0449723957541,4358,1538
+"335","6154","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",22.2222222222222,16.4733333333333,20.6666666666666,15.7150873613065,4358,1538
+"336","6154","POST_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",22.2222222222222,18.1206666666666,24.4444444444444,19.0085906234448,4358,1538
+"337","6155","EVAL_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",0,0,1.11111111111111,3.33333333333333,4600,2682
+"338","6155","GEN_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",0,0,2.94784580498866,7.78290512346859,4600,2682
+"339","6155","GEN_9","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",22.2222222222222,16.4733333333333,20.6349206349206,16.1970885967925,4600,2682
+"340","6155","POST_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",21.1111111111111,14.826,22.1358585858586,14.8861756454666,4600,2682
+"341","6156","EVAL_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,0.181818181818182,1.28564869306645,4600,2261
+"342","6156","GEN_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,1.6548463356974,4.62131366735756,4600,2261
+"343","6156","GEN_9","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",72.2222222222223,24.71,70.3703703703704,21.6635850791944,4600,2261
+"344","6156","POST_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",88.8888888888889,16.4733333333333,82.7959595959596,19.7159805502428,4600,2261
+"345","6157","EVAL_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",0,0,4.69696969696969,9.32501094710464,4600,3717
+"346","6157","GEN_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",0,0,4.86111111111111,9.14128946605346,4600,3717
+"347","6157","GEN_9","MBT","Syracuse University","Traditional","High Responder (6%-100%)",66.6666666666667,16.4733333333333,65.679012345679,26.7823901285924,4600,3717
+"348","6157","POST_1","MBT","Syracuse University","Traditional","High Responder (6%-100%)",100,0,93.9515151515152,8.29854159095368,4600,3717
+"349","6158","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",11.1111111111111,16.4733333333333,29.2833333333333,34.6239693778742,4600,2594
+"350","6158","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",33.3333333333333,32.9466666666666,33.5555555555556,24.7425646898741,4600,2594
+"351","6158","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",44.4444444444444,32.9466666666668,45.8049886621315,27.0870275791225,4600,2594
+"352","6158","POST_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",42.2222222222222,29.652,38.610101010101,24.2744717053668,4600,2594
+"353","6160","EVAL_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,0.222222222222222,1.57134840263677,4600,454
+"354","6160","GEN_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,1.69082125603865,4.66572083557179,4600,454
+"355","6160","GEN_9","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,12.2931442080378,23.0793681291995,4600,454
+"356","6160","POST_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,20.3952793238507,30.2100660638184,4600,454
+"357","6163","EVAL_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",0,0,4,8.32690606260571,4600,2638
+"358","6163","GEN_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",0,0,10.2222222222222,17.3648181983204,4600,2638
+"359","6163","GEN_9","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",50,57.6566666666667,49.3333333333333,36.4844645042759,4600,2638
+"360","6163","POST_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",77.7777777777778,16.4733333333333,71.1111111111111,22.2222222222222,4600,2638
+"361","6166","EVAL_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,2.88888888888889,7.03086812392066,4586,1685
+"362","6166","GEN_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,3.11111111111111,6.74929892872041,4586,1685
+"363","6166","GEN_9","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",11.1111111111111,16.4733333333333,22.6666666666667,29.6922995583236,4586,1685
+"364","6166","POST_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",55.5555555555556,32.9466666666666,52,25.1415744421884,4586,1685
+"365","6167","EVAL_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",0,0,8.88888888888888,10.7656031478179,4600,2717
+"366","6167","GEN_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",44.4444444444444,32.9466666666668,46.8888888888889,30.8026496424204,4600,2717
+"367","6167","GEN_9","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",55.5555555555556,32.9466666666666,54.6666666666667,23.4190198622324,4600,2717
+"368","6167","POST_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",55.5555555555556,16.4733333333335,56.4444444444444,17.0721646473,4600,2717
+"369","6168","EVAL_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",0,0,4.30839002267573,8.11958161546179,4600,2771
+"370","6168","GEN_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",38.8888888888889,57.6566666666666,36.8888888888889,34.1502320225021,4600,2771
+"371","6168","GEN_9","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",88.8888888888889,16.4733333333333,81.7777777777778,19.1478842539685,4600,2771
+"372","6168","POST_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",88.8888888888889,16.4733333333333,82,16.1702332212254,4600,2771
+"373","6169","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",0,0,38.6666666666667,48.1577989048926,4600,2864
+"374","6169","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",0,0,37.7777777777778,46.8186704881036,4600,2864
+"375","6169","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",0,0,40,49.0781740753661,4600,2864
+"376","6169","POST_1","Biofeedback","Syracuse University","Visual Acoustic","High Responder (6%-100%)",77.7777777777778,32.9466666666666,70.9750566893424,34.1577319340385,4600,2864
+"377","6170","EVAL_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",0,0,7.77777777777777,16.5338624253966,4600,2601
+"378","6170","GEN_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",11.1111111111111,16.4733333333333,24,24.6272283850406,4600,2601
+"379","6170","GEN_9","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",33.3333333333333,32.9466666666666,39.7777777777778,26.3788320734082,4600,2601
+"380","6170","POST_1","Biofeedback","Syracuse University","Visual Acoustic","Low Responder (0-5%)",38.8888888888889,24.71,43.1111111111111,23.718343929337,4600,2601
+"381","6171","EVAL_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,8.66666666666666,13.1449273731831,4600,2443
+"382","6171","GEN_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,8.88888888888888,12.0885287394665,4600,2443
+"383","6171","GEN_9","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",44.4444444444444,32.9466666666668,44.2222222222222,26.7957946934348,4600,2443
+"384","6171","POST_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",44.4444444444444,32.9466666666666,48.8888888888889,26.4656063500525,4600,2443
+"385","6172","EVAL_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,3.33333333333333,6.44764952748885,4600,2766
+"386","6172","GEN_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,3.85487528344671,11.0066899802723,4600,2766
+"387","6172","GEN_9","MBT","Syracuse University","Traditional","Low Responder (0-5%)",44.4444444444444,0,41.1111111111111,14.9324505731959,4600,2766
+"388","6172","POST_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",55.5555555555556,16.4733333333335,55.7777777777778,16.7217532572989,4600,2766
+"389","6173","EVAL_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",0,0,4.22222222222222,12.0655804374476,4600,2676
+"390","6173","GEN_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",0,0,18.4444444444444,29.2348032546892,4600,2676
+"391","6173","GEN_9","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",66.6666666666667,16.4733333333333,61.1111111111111,25.717224993682,4600,2676
+"392","6173","POST_1","Biofeedback","Syracuse University","Ultrasound","High Responder (6%-100%)",66.6666666666667,16.4733333333333,60.6666666666667,16.9789340822655,4600,2676
+"393","6174","EVAL_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,7.1111111111111,10.471379366648,4600,2212
+"394","6174","GEN_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",0,0,6.44444444444444,9.80793124176215,4600,2212
+"395","6174","GEN_9","MBT","Syracuse University","Traditional","Low Responder (0-5%)",11.1111111111111,16.4733333333333,14.4444444444444,18.5449546754729,4600,2212
+"396","6174","POST_1","MBT","Syracuse University","Traditional","Low Responder (0-5%)",16.6666666666667,24.71,22.2222222222222,23.75655483666,4600,2212
+"397","6175","EVAL_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",0,0,2.72108843537415,5.33382146922115,4586,2859
+"398","6175","GEN_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",66.6666666666667,16.4733333333333,59.5555555555556,23.1941643906131,4586,2859
+"399","6175","GEN_9","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",66.6666666666667,16.4733333333333,60.6666666666667,21.3207162235987,4586,2859
+"400","6175","POST_1","Biofeedback","Syracuse University","Ultrasound","Low Responder (0-5%)",55.5555555555556,16.4733333333335,57.3333333333333,20.1230780847498,4586,2859
